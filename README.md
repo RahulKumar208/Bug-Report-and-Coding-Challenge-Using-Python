@@ -23,7 +23,9 @@ The function checks if the throttle_level is within the valid range (0-250 km/h)
 
 # Example Usage:
 print(battery_power(0))      # Expected output: 0 watts (Throttle at MIN LEVEL)
+
 print(battery_power(125))    # Expected output: 500 watts (Throttle at mid-level)
+
 print(battery_power(250))    # Expected output: 1000 watts (Throttle at MAX LEVEL)
 
 # Testing
