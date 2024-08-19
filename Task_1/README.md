@@ -8,13 +8,15 @@ The project includes both the implementation of the function and the test cases 
 # Files
 - Testing_Functionality(Task_1).py: Contains the main function battery_power and associated test cases.
 
-# Function Details
+**Function Details**
+
 battery_power(throttle_level)
 
-# Parameters:
+**Parameters:**
+
 **throttle_level:** An integer or float representing the level of the throttle (in km/h). It must be between 0 and 250.
 
-# Returns:
+**Returns:**
 **power_level:** A float representing the power output of the battery (in watts). The output is proportional to the throttle level, ranging from 0 watts (at 0 km/h) to 1000 watts (at 250 km/h).
 
 # Description:
