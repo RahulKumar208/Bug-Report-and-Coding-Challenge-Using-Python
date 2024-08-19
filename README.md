@@ -45,8 +45,8 @@ The Testing_Functionality(Task_1).py file also contains a set of test cases to v
 
 # Fail States:
 •	Invalid Throttle Level (Negative):
-  o	Test: battery_power(-10)
-  o	Expected: Raises ValueError with message "Invalid throttle level: Must be between 0 and 250 km/h"
+o Test: battery_power(-10)
+o Expected: Raises ValueError with message "Invalid throttle level: Must be between 0 and 250 km/h"
 
 •	Invalid Throttle Level (Above 250 km/h):
   o	Test: battery_power(300)
