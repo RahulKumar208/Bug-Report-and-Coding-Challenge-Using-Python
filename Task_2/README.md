@@ -27,6 +27,7 @@ This repository contains a bug report for the interaction between the throttle a
 The bug report includes a comprehensive set of test scenarios to validate the issue:
 
 **Reproduction Tests:**
+
 •	**Throttle at 3 km/h:**
 
 o	Expected: 12 watts
@@ -52,6 +53,7 @@ o	Expected: 412 watts
 o	Actual: 30 watts
 
 **Non-Affected Tests:**
+
 •	**Throttle at 10 km/h:**
 
 o	Expected: 40 watts
