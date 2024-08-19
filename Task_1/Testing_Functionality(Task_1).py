@@ -29,3 +29,20 @@ assert battery_power(250) == 1000.0 # Throttle at MAX LEVEL
 assert battery_power(125) == 500.0  # Throttle at half-max
 assert battery_power(50) == 200.0   # Throttle at 20% max
 assert battery_power(200) == 800.0  # Throttle at 80% max
+
+
+# Fail States
+try:
+    battery_power(-10)
+except ValueError as e:
+    print(e)  # Expect an error message for invalid throttle level
+
+try:
+    battery_power(300)
+except ValueError as e:
+    print(e)  # Expect an error message for invalid throttle level
+
+try:
+    battery_power("100")
+except ValueError as e:
+    print(e)  # Expect an error message for invalid input type
