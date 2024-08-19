@@ -1,4 +1,4 @@
-# Battery Power
+# BATTERY POWER
 
 def battery_power(throttle_level):
     
@@ -11,7 +11,21 @@ def battery_power(throttle_level):
     
     return power_level
 
+
 # Example Test Cases
 print(battery_power(0))      # Expected output: 0 watts (Throttle at MIN LEVEL)
 print(battery_power(125))    # Expected output: 500 watts (Throttle at mid-level)
 print(battery_power(250))    # Expected output: 1000 watts (Throttle at MAX LEVEL)
+
+
+
+#TEST BATTERY POWER
+
+# Boundary Tests
+assert battery_power(0) == 0.0     # Throttle at MIN LEVEL
+assert battery_power(250) == 1000.0 # Throttle at MAX LEVEL
+
+# Mid-Range Tests
+assert battery_power(125) == 500.0  # Throttle at half-max
+assert battery_power(50) == 200.0   # Throttle at 20% max
+assert battery_power(200) == 800.0  # Throttle at 80% max
