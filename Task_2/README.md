@@ -52,13 +52,13 @@ o	Expected: 412 watts
 o	Actual: 30 watts
 
 **Non-Affected Tests:**
-•	Throttle at 10 km/h:
+•	**Throttle at 10 km/h:**
 
 o	Expected: 40 watts
 
 o	Actual: 40 watts
 
-•	Throttle at 20 km/h:
+•	**Throttle at 20 km/h:**
 
 o	Expected: 80 watts
 
