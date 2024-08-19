@@ -33,9 +33,13 @@ The Testing_Functionality(Task_1).py file also contains a set of test cases to v
 
 # Boundary Tests:
 •	Throttle at MIN LEVEL (0 km/h): 
+
   o	assert battery_power(0) == 0.0
+  
 •	Throttle at MAX LEVEL (250 km/h): 
+
   o	assert battery_power(250) == 1000.0
+  
 
 # Mid-Range Tests:
 •	Throttle at 125 km/h (50% of MAX): 
