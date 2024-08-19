@@ -43,24 +43,36 @@ The Testing_Functionality(Task_1).py file also contains a set of test cases to v
 
 # Mid-Range Tests:
 •	Throttle at 125 km/h (50% of MAX): 
+
   o	assert battery_power(125) == 500.0
+  
 •	Throttle at 50 km/h (20% of MAX): 
+
   o	assert battery_power(50) == 200.0
+  
 •	Throttle at 200 km/h (80% of MAX): 
+
   o	assert battery_power(200) == 800.0
 
 # Fail States:
 •	Invalid Throttle Level (Negative):
+
 o Test: battery_power(-10)
+
 o Expected: Raises ValueError with message "Invalid throttle level: Must be between 0 and 250 km/h"
+
 
 •	Invalid Throttle Level (Above 250 km/h):
   o	Test: battery_power(300)
+  
   o	Expected: Raises ValueError with message "Invalid throttle level: Must be between 0 and 250 km/h"
+  
 
 •	Invalid Input Type (Non-numeric):
   o	Test: battery_power("100")
+  
   o	Expected: Raises TypeError
+  
 
 # Running Tests
 To run the test cases, simply execute the script. If the function works as expected, the assertions will pass without errors. If any test fails, the script will raise an assertion error.
