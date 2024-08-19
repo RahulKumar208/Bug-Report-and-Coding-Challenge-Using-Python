@@ -14,10 +14,10 @@ battery_power(throttle_level)
 
 **Parameters:**
 
-**throttle_level:** An integer or float representing the level of the throttle (in km/h). It must be between 0 and 250.
+throttle_level: An integer or float representing the level of the throttle (in km/h). It must be between 0 and 250.
 
 **Returns:**
-**power_level:** A float representing the power output of the battery (in watts). The output is proportional to the throttle level, ranging from 0 watts (at 0 km/h) to 1000 watts (at 250 km/h).
+power_level: A float representing the power output of the battery (in watts). The output is proportional to the throttle level, ranging from 0 watts (at 0 km/h) to 1000 watts (at 250 km/h).
 
 # Description:
 
