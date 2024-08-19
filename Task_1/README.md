@@ -32,6 +32,7 @@ print(battery_power(250))    # Expected output: 1000 watts (Throttle at MAX LEVE
 The Testing_Functionality(Task_1).py file also contains a set of test cases to validate the function:
 
 **Boundary Tests:**
+
 •	Throttle at MIN LEVEL (0 km/h): 
 
   o	assert battery_power(0) == 0.0
@@ -42,6 +43,7 @@ The Testing_Functionality(Task_1).py file also contains a set of test cases to v
   
 
 **Mid-Range Tests:**
+
 •	Throttle at 125 km/h (50% of MAX): 
 
   o	assert battery_power(125) == 500.0
@@ -55,6 +57,7 @@ The Testing_Functionality(Task_1).py file also contains a set of test cases to v
   o	assert battery_power(200) == 800.0
 
 **Fail States:**
+
 •	Invalid Throttle Level (Negative):
 
 o Test: battery_power(-10)
